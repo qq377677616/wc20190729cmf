@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/anim.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+    <script src="https://game.flyh5.cn/game/twolevel_autho/share.php?auth_appid=wx7c3ed56f7f792d84&type=js&isonlyopenid=true"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/remAdaptation.js"></script>
+</head>
+
+<body>
+    <div class="load">
+        <img src="./img/home/load_2.png" />
+        <div>
+            <span class="loadAnim"></span>
+        </div>
+    </div>
+    <div class="compatibleBox">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="ruler home_page">
+                        <div class="item_bg"></div>
+                        <div class="content_item g_anim_r s_anim_o">
+                            <div class="golden"><div></div></div>
+                            <div class="logo"></div>
+                            <div class="big_title"></div>
+                            <div class="title"></div>
+                            <div class="decorate"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="ruler page_1 _l s_anim_r">
+                        <div class="item_bg"></div>
+                        <div class="scenery"></div>
+                        <div class="content_item d_anim_b g_anim_o">
+                            <div class="golden"><div></div></div>
+                            <div class="birds"></div>
+                            <div class="birds birds_2"></div>
+                            <div class="logo"></div>
+                            <div class="title"></div>
+                            <div class="describe"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="ruler page_2 _r s_anim_r">
+                        <div class="item_bg"></div>
+                        <div class="scenery"></div>
+                        <div class="content_item d_anim_l g_anim_r">
+                            <div class="golden"><div></div></div>
+                            <div class="birds"></div>
+                            <div class="logo"></div>
+                            <div class="title"></div>
+                            <div class="describe"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="ruler page_3 _l s_anim_o">
+                        <div class="item_bg"></div>
+                        <div class="scenery"></div>
+                        <div class="content_item d_anim_b g_anim_r">
+                            <div class="golden"><div></div></div>
+                            <div class="birds"></div>
+                            <div class="birds birds_2"></div>
+                            <div class="logo"></div>
+                            <div class="title"></div>
+                            <div class="describe"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="ruler page_4 _r s_anim_b">
+                        <div class="item_bg"></div>
+                        <div class="scenery"></div>
+                        <div class="content_item d_anim_l g_anim_r">
+                            <div class="golden"><div></div></div>
+                            <div class="logo"></div>
+                            <div class="title"></div>
+                            <div class="describe"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="ruler page_5 _l s_anim_l">
+                        <div class="item_bg"></div>
+                        <div class="scenery"></div>
+                        <div class="content_item d_anim_r g_anim_o">
+                            <div class="golden"><div></div></div>
+                            <div class="birds"></div>
+                            <div class="logo"></div>
+                            <div class="title"></div>
+                            <div class="describe"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="ruler page_6 _r s_anim_b">
+                        <div class="item_bg"></div>
+                        <div class="scenery"></div>
+                        <div class="content_item d_anim_l g_anim_r">
+                            <div class="golden"><div></div></div>
+                            <div class="logo"></div>
+                            <div class="title"></div>
+                            <div class="describe"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="ruler page_7 _l s_anim_l">
+                        <div class="item_bg"></div>
+                        <div class="scenery"></div>
+                        <div class="content_item d_anim_r g_anim_o">
+                            <div class="golden"><div></div></div>
+                            <div class="birds"></div>
+                            <div class="birds birds_2"></div>
+                            <div class="logo"></div>
+                            <div class="title"></div>
+                            <div class="describe"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="ruler tail_page">
+                        <div class="item_bg"></div>
+                        <div class="content_item">
+                            <div class="golden"><div></div></div>
+                            <div class="small_logo"></div>
+                            <div class="poetry"></div>
+                            <div class="overlook_img"></div>
+                            <div class="contact"><div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="audio" id="audio">
+        <audio loop="loop" id="myAudio" src=''>
+            您的浏览器不支持 audio 元素。
+        </audio>
+    </div>
+    <div class="arrow"><span></span></div>
+</body>
+<script>
+    // 引入腾讯移动分析平台代码，验证微信sdk，配置微信分享
+    (function init() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status >= 200 && xhr.status < 300 || xhr.status == 304) {
+                    var jsData = JSON.parse(xhr.responseText);
+                    jsData = JSON.parse(decodeURIComponent(jsData.data.content.info));
+                    document.title = jsData.docTitle;
+                    window.bg_audio = jsData.res_music;
+                    var mta = document.createElement("script");
+                    mta.innerText = jsData.res_code;
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(mta, s);
+                    if (!!navigator.userAgent.toLowerCase().match(/MicroMessenger/i) == "micromessenger") return;
+                    (function wxConfig() {
+                        wx.config({
+                            debug: window.openJssdkDebug,
+                            appId: wx_config["appId"],
+                            timestamp: wx_config["timestamp"],
+                            nonceStr: wx_config["nonceStr"],
+                            signature: wx_config["signature"],
+                            jsApiList: ['updateAppMessageShareData', 'updateTimelineShareData', 'onMenuShareTimeline','onMenuShareAppMessage']
+                        })
+                        wx.ready(function () {
+                            var _obj = {
+                                title: jsData.shareTitle, // 分享标题
+                                desc: jsData.shareContent,
+                                link: window.location.href,
+                                imgUrl: jsData.shareImg, // 分享图标
+                                success: function () {
+                                    // 设置成功
+                                }
+                            }
+                            try{
+                                wx.updateAppMessageShareData(_obj);
+                                wx.updateTimelineShareData(_obj);
+                            }catch(err){
+                                console.log(err);
+                                wx.onMenuShareTimeline(_obj);
+                                wx.onMenuShareAppMessage(_obj);
+                            }
+                        })
+                        wx.error(function (res) {
+                            console.log("wx.config error:", res);
+                            wxConfig();
+                        })
+                    })();
+
+                };
+            };
+        };
+        xhr.open('get', 'http://game.flyh5.cn/game/wx7c3ed56f7f792d84/data_system/api.php?a=web&code=MpBVtXRuJ6d94ACFx5W', false);
+        xhr.send(null);
+    })()
+</script>
+<script src="./js/index.js"></script>
+</html>
